@@ -75,6 +75,70 @@
             tapping-term-ms = <350>;
             bindings = <&kp DOWN>, <&kp LA(DOWN_ARROW)>, <&kp LG(DOWN)>;
         };
+
+        td_f1: td_f1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F1";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F1>, <&kp LA(F1)>, <&kp LG(F1)>;
+        };
+
+        td_f2: td_f2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F2";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F2>, <&kp LA(F2)>, <&kp LG(F2)>;
+        };
+
+        td_f3: td_f3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F3";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F3>, <&kp LA(F3)>, <&kp LG(F3)>;
+        };
+
+        td_f4: td_f4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F4";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F4>, <&kp LA(F4)>, <&kp LG(F4)>;
+        };
+
+        td_f5: td_f5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F5";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F5>, <&kp LA(F5)>, <&kp LG(F5)>;
+        };
+
+        td_f6: td_f6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F6";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F6>, <&kp LA(F6)>, <&kp LG(F6)>;
+        };
+
+        td_f7: td_f7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F7";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F7>, <&kp LA(F7)>, <&kp LG(F7)>;
+        };
+
+        td_f8: td_f8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F8";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp F8>, <&kp LA(F8)>, <&kp LG(F8)>;
+        };
     };
 
     combos {
@@ -169,10 +233,10 @@
 
         nav_layer {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1    &kp F2    &kp F3        &kp F4        &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp UP_ARROW  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp F5    &kp F6    &kp F7        &kp F8        &trans
-                            &trans  &trans  &trans  &trans  &trans    &trans
+&kp ESCAPE  &td_f1  &td_f2  &td_f3  &td_f4  &trans  &trans  &kp LA(LEFT)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN            &kp UP_ARROW      &kp RIGHT      &trans
+&trans      &td_f5  &td_f6  &td_f7  &td_f8  &trans  &trans  &kp LG(LEFT)  &kp LG(DOWN)        &kp LG(UP_ARROW)  &kp LG(RIGHT)  &trans
+                            &trans  &trans  &trans  &trans  &trans        &trans
             >;
         };
 

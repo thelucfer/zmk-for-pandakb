@@ -35,6 +35,14 @@
             global-quick-tap;
             quick-tap-ms = <400>;
         };
+
+        td_arrow_fn: td_arrow_fn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ARROW_FN";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp GREATER_THAN>, <&arrow_fn>;
+        };
     };
 
     combos {
@@ -85,6 +93,25 @@
             bindings = <&kp PIPE>;
             key-positions = <17 18>;
         };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <13 14>;
+        };
+
+        greater_than {
+            bindings = <&td_arrow_fn>;
+            key-positions = <21 22>;
+        };
+    };
+
+    macros {
+        arrow_fn: arrow_fn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROW_FN";
+        };
     };
 
     keymap {
@@ -119,10 +146,10 @@
 
         sym_layer {
             bindings = <
-&trans  &kp EXCLAMATION  &kp QUESTION      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL     &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans     &kp PERCENT           &kp CARET              &kp AMPS   &kp ASTERISK  &trans
-&trans  &kp BSLH         &kp FSLH          &kp LBKT              &kp RBKT               &trans  &kp GRAVE  &kp EXCL              &kp AT                 &kp HASH   &kp DOLLAR    &trans
-                                           &trans                &trans                 &trans  &trans     &trans                &trans
+&kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans
+&kp PIPE       &kp PERCENT           &kp CARET              &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans
+&kp BACKSLASH  &kp EXCL              &kp AT                 &kp HASH       &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans
+                                                            &trans         &trans        &trans                &trans                 &trans  &trans
             >;
         };
 

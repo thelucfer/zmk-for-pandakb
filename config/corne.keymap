@@ -43,6 +43,38 @@
             tapping-term-ms = <350>;
             bindings = <&kp GREATER_THAN>, <&arrow_fn>;
         };
+
+        td_left: td_left {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LEFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp LEFT>, <&kp LA(LEFT)>, <&kp LG(LEFT)>;
+        };
+
+        td_right: td_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RIGHT";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp RIGHT>, <&kp LA(RIGHT)>, <&kp LG(RIGHT)>;
+        };
+
+        td_up: td_up {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_UP";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp UP_ARROW>, <&kp LA(UP_ARROW)>, <&kp LG(UP_ARROW)>;
+        };
+
+        td_down: td_down {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOWN";
+            #binding-cells = <0>;
+            tapping-term-ms = <350>;
+            bindings = <&kp DOWN>, <&kp LA(DOWN_ARROW)>, <&kp LG(DOWN)>;
+        };
     };
 
     combos {
@@ -137,9 +169,9 @@
 
         nav_layer {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1    &kp F2    &kp F3        &kp F4     &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp F5    &kp F6    &kp F7        &kp F8     &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1    &kp F2    &kp F3  &kp F4     &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &td_left  &td_down  &td_up  &td_right  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &kp F5    &kp F6    &kp F7  &kp F8     &trans
                             &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };

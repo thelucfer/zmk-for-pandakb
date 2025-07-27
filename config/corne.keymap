@@ -221,9 +221,9 @@
 
         num_layer {
             bindings = <
-&trans  &kp N7        &kp N8  &kp N9  &kp N0     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N4        &kp N5  &kp N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N7        &kp N8  &kp N9  &kp N0     &trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0     &trans
+&trans  &kp N4        &kp N5  &kp N6  &kp MINUS  &trans  &trans  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp NUMBER_1  &kp N2  &kp N3  &kp EQUAL  &trans  &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
                               &trans  &trans     &trans  &trans  &trans  &trans
             >;
         };
@@ -239,10 +239,10 @@
 
         sym_layer {
             bindings = <
-&trans  &kp AMPERSAND  &kp ASTERISK  &kp PIPE   &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOLLAR     &kp PERCENT   &kp CARET  &kp GRAVE      &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCL       &kp AT        &kp HASH   &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans  &trans
-                                     &trans     &trans         &trans                &trans                 &trans  &trans
+&trans  &kp PLUS   &kp ASTRK      &kp MINUS  &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS   &kp DOLLAR  &kp PERCENT   &trans  &trans
+&trans  &kp CARET  &kp TILDE      &kp GRAVE  &kp LA(APOS)   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCL   &kp AT      &kp QUESTION  &trans  &trans
+&trans  &trans     &kp LESS_THAN  &kp PIPE   &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH  &kp PIPE    &td_arrow_fn  &trans  &trans
+                                  &trans     &trans         &trans                &trans                 &trans     &trans
             >;
         };
 

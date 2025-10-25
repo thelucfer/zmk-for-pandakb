@@ -14,10 +14,10 @@ manifest:
     #   url-base: https://github.com/M165437
     - name: s6t
       url-base: https://github.com/s6t
-    # - name: infely
-    #   url-base: https://github.com/infely
-    # - name: thelucfer
-    #   url-base: https://github.com/thelucfer
+    - name: infely
+      url-base: https://github.com/infely
+    - name: thelucfer
+      url-base: https://github.com/thelucfer
     - name: ssbb
       url-base: https://github.com/ssbb
   projects:
@@ -43,9 +43,9 @@ manifest:
     #   - name: nice-view-battery
     #     remote: infely
     #     revision: main
-    # - name: nice-view-press-start
-    #   remote: thelucfer
-    #   revision: main
+    - name: nice-view-press-start
+      remote: thelucfer
+      revision: main
     - name: zmk-antecedent-morph
       remote: ssbb
       revision: v1

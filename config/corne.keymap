@@ -259,7 +259,7 @@
             key-positions = <18 6>;
         };
 
-        equals {
+        equals_afn {
             bindings = <&ad_afn>;
             key-positions = <7 19>;
         };

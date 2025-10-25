@@ -23,24 +23,24 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: hammerbeam-slideshow
-      remote: gpeye
-      revision: main
-    - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: main
-    - name: nice-view-elemental
-      remote: kevinpastor
-      revision: main
-    - name: nice-view-gem
-      remote: m165437
-      revision: main
-    - name: zmk-shield-nice-view-cats
-      remote: s6t
-      revision: main
-    - name: nice-view-battery
-      remote: infely
-      revision: main
+    #    - name: hammerbeam-slideshow
+    #      remote: gpeye
+    #      revision: main
+    #  - name: zmk-nice-oled
+    #     remote: mctechnology17
+    #     revision: main
+    #   - name: nice-view-elemental
+    #     remote: kevinpastor
+    #    revision: main
+    #   - name: nice-view-gem
+    #     remote: m165437
+    #     revision: main
+    #   - name: zmk-shield-nice-view-cats
+    #     remote: s6t
+    #     revision: main
+    #   - name: nice-view-battery
+    #     remote: infely
+    #     revision: main
     - name: nice-view-press-start
       remote: Ziembski
       revision: main

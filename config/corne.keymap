@@ -113,7 +113,7 @@
             label = "MAGIC_SHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&sk LEFT_SHIFT>, <&kt LEFT_SHIFT>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
         magic_layer: magic_layer {
@@ -306,6 +306,7 @@
                                                   &kp TAB         &kp SPACE       &td_magic_layer_1  &td_magic_layer_1  &b_magic_shift LEFT_SHIFT 0  &kp GRAVE
             >;
         };
+
         num_nav {
             display-name = "NAV";
             bindings = <

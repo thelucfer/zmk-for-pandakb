@@ -18,6 +18,8 @@ manifest:
     #   url-base: https://github.com/infely
     - name: Ziembski
       url-base: https://github.com/Ziembski
+    - name: ssbb
+      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -44,5 +46,8 @@ manifest:
     - name: nice-view-press-start
       remote: Ziembski
       revision: main
+    - name: zmk-antecedent-morph
+      remote: ssbb
+      revision: v1
   self:
     path: config

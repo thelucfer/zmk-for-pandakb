@@ -31,7 +31,7 @@
             label = "ADAPTIVE_GREATER_THAN";
             #binding-cells = <0>;
             defaults = <&kp DOT>;
-            bindings = <&kp &arrow_fn>;
+            bindings = <&arrow_fn>;
             antecedents = <DOT>;
             max-delay-ms = <250>;
         };

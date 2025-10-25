@@ -30,7 +30,7 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_ARROW_FN";
             #binding-cells = <0>;
-            defaults = <&kp DOT>;
+            defaults = <&kp EQUAL>;
             bindings = <&arrow_fn>;
             antecedents = <SPACE>;
             max-delay-ms = <250>;

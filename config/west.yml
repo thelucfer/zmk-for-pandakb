@@ -16,6 +16,8 @@ manifest:
       url-base: https://github.com/s6t
     - name: infely
       url-base: https://github.com/infely
+    - name: Ziembski
+      url-base: https://github.com/Ziembski
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -38,6 +40,9 @@ manifest:
       revision: main
     - name: nice-view-battery
       remote: infely
+      revision: main
+    - name: nice-view-press-start
+      remote: Ziembski
       revision: main
   self:
     path: config

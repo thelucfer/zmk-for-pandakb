@@ -15,15 +15,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <175>;
+            quick-tap-ms = <180>;
             global-quick-tap;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
         };
 
         ad_afn: adaptive_arrow_fn {
@@ -133,18 +131,16 @@
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
             flavor = "balanced";
-            hold-trigger-on-release;
         };
 
         td_magic_layer_1: td_magic_layer_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MAGIC_LAYER_1";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             bindings = <&magic_layer 1 1>, <&tog 1>;
         };
 
@@ -154,7 +150,7 @@
             #binding-cells = <0>;
             bindings = <&magic_layer 2 2>, <&tog 2>;
 
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
         };
 
         b_magic_shift: b_magic_shift {
@@ -164,17 +160,15 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
         };
 
         slash_backslash: slash_backslash {
             compatible = "zmk,behavior-tap-dance";
             label = "SLASH_BACKSLASH";
             #binding-cells = <0>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
         };
 
@@ -184,7 +178,7 @@
             #binding-cells = <0>;
             bindings = <&magic_layer 3 3>, <&tog 3>;
 
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
         };
 
         td_magic_layer_4: td_magic_layer_4 {
@@ -193,7 +187,7 @@
             #binding-cells = <0>;
             bindings = <&magic_layer 4 4>, <&tog 4>;
 
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
         };
 
         new_behavior: new_behavior {

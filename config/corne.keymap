@@ -356,7 +356,7 @@
             bindings = <
 &kp ESCAPE         &kp Q              &kp W         &kp E            &kp R            &kp T              &kp Y      &kp U                        &kp I            &kp O         &kp P                      &kp GRAVE
 &td_magic_layer_4  &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G              &kp H      &hmr LEFT_GUI J              &hmr LEFT_ALT K  &hmr LCTRL L  &hmr LEFT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
-&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp N      &kp M                        &kp COMMA        &kp DOT       &qexcl                     &qexcl
+&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp N      &kp M                        &kp COMMA        &kp DOT       &qexcl                     &num_word 1
                                                     &kp TAB          &kp SPACE        &td_magic_layer_1  &kp ENTER  &b_magic_shift LEFT_SHIFT 0  &kp BACKSPACE
             >;
         };

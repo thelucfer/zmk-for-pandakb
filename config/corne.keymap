@@ -232,6 +232,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        rpar: rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {

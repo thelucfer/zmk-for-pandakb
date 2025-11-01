@@ -140,6 +140,14 @@
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
+        td_num_word: td_num_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUM_WORD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&num_word 1>, <&tog 1>;
+        };
+
         magic_layer: magic_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "MAGIC_LAYER";
@@ -356,7 +364,7 @@
             bindings = <
 &kp ESCAPE         &kp Q              &kp W         &kp E            &kp R            &kp T              &kp Y      &kp U                        &kp I            &kp O         &kp P                      &kp GRAVE
 &td_magic_layer_4  &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G              &kp H      &hmr LEFT_GUI J              &hmr LEFT_ALT K  &hmr LCTRL L  &hmr LEFT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
-&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp N      &kp M                        &kp COMMA        &kp DOT       &qexcl                     &num_word 1
+&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp N      &kp M                        &kp COMMA        &kp DOT       &qexcl                     &td_num_word
                                                     &kp TAB          &kp SPACE        &td_magic_layer_1  &kp ENTER  &b_magic_shift LEFT_SHIFT 0  &kp BACKSPACE
             >;
         };

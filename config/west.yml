@@ -20,8 +20,6 @@ manifest:
     #   url-base: https://github.com/thelucfer
     - name: ssbb
       url-base: https://github.com/ssbb
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -51,8 +49,5 @@ manifest:
     - name: zmk-antecedent-morph
       remote: ssbb
       revision: v1
-    - name: zmk-helpers
-      remote: urob
-      revision: main
   self:
     path: config

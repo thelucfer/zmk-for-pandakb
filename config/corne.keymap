@@ -324,7 +324,7 @@
 
         rpar {
             bindings = <&rpar>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
         };
 
         lbkt {
@@ -334,7 +334,7 @@
 
         rbkt {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
         };
     };
 

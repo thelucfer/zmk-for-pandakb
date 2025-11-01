@@ -136,7 +136,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <280>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-            global-quick-tap;
         };
 
         magic_layer: magic_layer {

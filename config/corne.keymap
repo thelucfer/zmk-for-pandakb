@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors/num_word.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <behaviors/num_word.dtsi>
 
 / {
     behaviors {
@@ -232,15 +232,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        rpar: rpar {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RPAR";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
     };
 
     combos {
@@ -374,7 +365,7 @@
             bindings = <
 &to 0   &kp N1                    &kp N2         &kp N3            &kp N4            &kp N5  &trans  &trans    &trans    &trans  &trans     &trans
 &trans  &hml LEFT_SHIFT NUMBER_6  &hml LCTRL N7  &hml LEFT_ALT N8  &hml LEFT_GUI N9  &kp N0  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans                    &trans         &trans            &trans            &trans  &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans                    &trans         &trans            &trans            &trans  &trans  &trans    &trans    &trans  &trans     &to 0
                                                  &trans            &trans            &trans  &to 0   &trans    &trans
             >;
         };

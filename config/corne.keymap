@@ -195,16 +195,6 @@
             tapping-term-ms = <200>;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-antecedent-morph";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-            defaults = <&kp EQUAL>;
-            bindings = <&arrow_fn>;
-            antecedents = <SPACE>;
-            max-delay-ms = <250>;
-        };
-
         b_magic_shift: b_magic_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "B_MAGIC_SHIFT";

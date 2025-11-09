@@ -370,9 +370,9 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE         &kp Q              &kp W         &kp E            &kp R            &kp T              &kp Y      &kp U                        &kp I            &kp O         &kp P                      &kp GRAVE
-&td_magic_layer_4  &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G              &kp H      &hmr LEFT_GUI J              &hmr LEFT_ALT K  &hmr LCTRL L  &hmr LEFT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
-&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp N      &kp M                        &kp COMMA        &kp DOT       &qexcl                     &td_num_word
+&kp ESCAPE         &kp Q              &kp W         &kp F            &kp P            &kp G              &kp J      &kp L                        &kp U            &kp Y         &kp SEMI           &kp GRAVE
+&td_magic_layer_4  &hml LEFT_SHIFT A  &hml LCTRL R  &hml LEFT_ALT S  &hml LEFT_GUI T  &kp D              &kp H      &hmr LEFT_GUI N              &hmr LEFT_ALT E  &hmr LCTRL I  &hmr LEFT_SHIFT O  &kp SINGLE_QUOTE
+&td_magic_layer_2  &kp Z              &kp X         &kp C            &kp V            &kp B              &kp K      &kp M                        &kp COMMA        &kp DOT       &qexcl             &td_num_word
                                                     &kp TAB          &kp SPACE        &td_magic_layer_1  &kp ENTER  &b_magic_shift LEFT_SHIFT 0  &kp BACKSPACE
             >;
         };
